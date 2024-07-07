@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/images/small-town-folk-swiggy-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+*{
+    font-family: "Poppins", sans-serif;
+        /* font-weight: 1000; */
+        font-style: normal;   
+        letter-spacing: 2px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: white;
+}
+.outline{
+    display: flex;
+    /* font-size: 20px; */
+    padding: 10px;
+    background-color: rgb(178, 95, 64);
+    align-items: center;
+    justify-content: space-around;
+}
+.outline a:hover{
+    color: orangered;
+}
+.outline li{
+    display: inline-block;
+    margin: 0 8px;
+}
+.swiggy{
+    font-weight: bolder;
+    font-size: 36px;
+}
+.nav1{
+    width: 20px;
+    height: 2px;
+    margin-bottom: 2px;
+    background-color: black;
+    cursor: pointer;
+}
+.nav{
+    display: none;
+    cursor: pointer;
+}
+@media all and (max-width:600px){
+    body{
+        background-image: url(/images/netflix\ form.jpg);
+    }
+    .outline{
+        flex-direction: column;
+    }
+    .swiggy{
+        align-self: flex-start;
+    }
+    .nav{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right:10px;
+    }
+    ul{
+        padding: 0;
+        display: none;
+    }
+    .outline li{
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .click{
+        display: block;
+}
+}
+
